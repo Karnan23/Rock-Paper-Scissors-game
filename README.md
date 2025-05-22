@@ -11,3 +11,7 @@ A simple terminal-based Rock-Paper-Scissors game written in Python. Built for fu
 ## How to Run
 ```bash
 python rps_game.py
+
+## Demo
+
+![Game Demo](demo.gif)
