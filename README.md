@@ -14,4 +14,6 @@ python rps_game.py
 
 ## Demo
 
-![Game Demo](demo.gif)
+![Game Demo]
+![image](https://github.com/user-attachments/assets/c20fc986-911e-4104-9da9-35ce7284dd5f)
+
