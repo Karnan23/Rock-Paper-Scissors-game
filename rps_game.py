@@ -45,7 +45,19 @@ def overall_winner(user_count, computer_count):
     else:
         print("It's a tie overall!")
     print("Thanks for playing!")
-   
+
+def want_continue(user_count, computer_count):
+    should_continue = input("Do you want to play again? (y/n): ").lower()
+    if should_continue !='n':
+        while should_continue not in ['y']:
+            print("Invalid input! Please enter 'y' or 'n'.")
+            should_continue = input("Do you want to play again? (y/n): ").lower()
+            continue
+    elif should_continue=='n':
+         overall_winner(user_count, computer_count)
+
+
+
 def play_game():
     user_count=0
     computer_count=0
@@ -62,7 +74,13 @@ def play_game():
         should_continue = input("Do you want to play again? (y/n): ").lower()
         if should_continue == 'n':
             overall_winner(user_count, computer_count)
-            break
+            break  # exit the play_game function
+        elif should_continue == 'y':
+            continue
+        else:
+            print("Invalid input! Please enter 'y' or 'n'.")
+            want_continue(user_count, computer_count)
+            
         
 
 play_game()
